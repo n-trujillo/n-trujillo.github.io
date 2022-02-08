@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    margin: 0px;
+    height: 100%;
+}
+
+.theme-switch {
+    background-color: #b88484;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+.theme-switch:hover {
+    background-color: #8a6868;
+}
+
+.page-wrapper {
+    margin:0px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: none;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 2.5em;
+    color: black;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: black;
+}
+
+header {
+    min-height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    color: black; 
+    font-family: sans-serif;
+    font-size: 0.75em;
+    display: flex;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+li a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #b88484;
+}
+
+footer {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    filter: brightness(0);
+    height: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.container .wide-img-box {
+    display: none;
+}
+
+.container .img-box {
+    margin-top: 50px;
+    padding-right: 2em;
+    padding-left: 2em;
+    text-align: center;
+    flex: 1;
+}
+
+.container .img-box img {
+    display: block;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container .content {
+    padding-left: 2em;
+    padding-right: 2em;
+    flex: 1;
+}
+
+@media (max-width: 1170px) {
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        overflow: scroll;
+        margin-bottom: 0px;
+    }
+
+    header {
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container .content .title {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: Gray;
+    margin-top: 50px;
+}
+
+.container .content .name {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 2.5em;
+    color: black;
+    margin-top: 20px;
+}
+
+.container .content .university {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: black;
+    margin-top: 50px;
+}
+
+.container .content .degree {
+    color: #b88484;
+    margin-top: 25px;
+}
+
+.container .content .summary {
+    color: dimgray;
+    margin-top: 25px;
+}
+
+.intro {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.card-stack {
+    padding-left: 4em;
+    padding-right: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.card ul {
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+    color: dimgray;
+}
+
+.card-title {
+    color: black;
+    text-decoration: none;
+}
+
+.card-subtitle {
+    margin-top: 5px;
+    color: #b88484;
+}
+
+.card-summary {
+    margin-top: 10px;
+    color: dimgray;
+}
+
+.btn {
+    background-color: #b88484;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  .btn:hover {
+    background-color: #996d6d;
+  }
+
+  .area-of-interest {
+      margin-top: 50px;
+  }
