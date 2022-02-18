@@ -18,10 +18,6 @@ body {
     flex-direction: column;
 }
 
-.checkbox {
-    display: none;
-}
-
 h1 {
     font-family: sans-serif;
     font-weight: lighter;
@@ -37,18 +33,23 @@ h2 {
     color: black;
 }
 
+.banner {
+    background-color: rgb(220, 255, 220);
+}
+
 header {
     min-height: 40px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    margin: 40px;
 }
 
 nav ul {
     list-style-type: none;
     color: black; 
     font-family: sans-serif;
-    font-size: 0.75em;
+    font-size: 1em;
     display: flex;
     gap: 10px 30px;
     flex-wrap: wrap;
@@ -65,7 +66,7 @@ li a {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: #b88484;
+    text-decoration-color: black;
 }
 
 footer {
@@ -81,88 +82,20 @@ footer img {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: flex-start;
     height: auto;
     margin-bottom: 50px;
 }
 
-.container .wide-img-box {
-    display: none;
-}
-
-.container .img-box {
+.side-bar {
+    float: right;
+    width: 25%;
     margin-top: 50px;
-    padding-right: 2em;
-    padding-left: 2em;
-    text-align: center;
-    flex: 1;
+    padding-right: 4em;
 }
 
-.container .img-box img {
-    display: block;
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-.container .content {
-    padding-left: 2em;
-    padding-right: 2em;
-    flex: 1;
-}
-
-@media (max-width: 1170px) {
-    .container {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        overflow: scroll;
-        margin-bottom: 0px;
-    }
-
-    header {
-        min-height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.container .content .title {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: Gray;
-    margin-top: 50px;
-}
-
-.container .content .name {
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 2.5em;
-    color: black;
-    margin-top: 20px;
-}
-
-.container .content .university {
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 1.5em;
-    color: black;
-    margin-top: 50px;
-}
-
-.container .content .degree {
-    color: #b88484;
-    margin-top: 25px;
-}
-
-.container .content .summary {
-    color: dimgray;
-    margin-top: 25px;
+.side-bar p {
+    margin-top: 10px;
+    color: grey;
 }
 
 .intro {
@@ -180,6 +113,9 @@ footer img {
     align-content: flex-start;
     height: auto;
     margin-bottom: 50px;
+    width: 75%;
+    float: left;
+
 }
 
 .card {
@@ -187,6 +123,23 @@ footer img {
     margin: 10px;
     vertical-align: middle;
     margin-top: 50px;
+    border-radius: 15px;
+    background-color: rgb(220, 255, 220);
+    padding: 15px;
+}
+
+.img-card {
+    max-width: 300px;
+    margin: 10px;
+    vertical-align: middle;
+    margin-top: 50px;
+    
+}
+
+.img-card img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .card ul {
@@ -203,28 +156,18 @@ footer img {
 
 .card-subtitle {
     margin-top: 5px;
-    color: #b88484;
+    color: grey;
+    font-style: italic;
 }
 
 .card-summary {
     margin-top: 10px;
-    color: dimgray;
+    color: black;
 }
 
-.btn {
-    background-color: #b88484;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    max-width: 100%;
-  }
-
-  .btn:hover {
-    background-color: #996d6d;
-  }
-
-  .area-of-interest {
-      margin-top: 50px;
-  }
+footer {
+    display: flex;
+    background-color: rgb(220, 255, 220);
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
