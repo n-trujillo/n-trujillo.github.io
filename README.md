@@ -1,2 +1,3 @@
 # portfolio_website
-Project 1 for CSCE 315
+
+Collection of projects and accomplishments in website format!
