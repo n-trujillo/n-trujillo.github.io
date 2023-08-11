@@ -45,18 +45,87 @@
 
         <div class="card-stack">
 
-            <div class="area-of-interest">
-                <h2 class="card-title">Work Experience</h2>
-                <p class="card-subtitle">Amazon AWS SageMaker (Software Development Engineer Intern) </p>
-                <p class="card-summary">
-                    During my time as a software developer, I was involved in several impactful projects. One of my major achievements was collaborating on improving the SageMaker GroundTruth machine learning platform. Additionally, I implemented the OpenID Connect (OIDC) authentication protocol to two existing resources, which was a significant security improvement. To ensure that my work was well-documented, I authored a comprehensive 5-page documentation on three major feature changes. I also took the initiative to initiate 11+ code reviews, which were approved and pushed into the AWS production pipeline. To ensure that the code was deployed in all regions, I submitted five or more tickets to outside teams. Furthermore, I collaborated with outside teams to update the AWS public documentation for two SageMaker resources. During the process, I discovered two major bugs in legacy code and promptly implemented a hot-fix for both, which helped to improve the overall quality and reliability of the software.
-                </p>
+            <div class="section-banner">
+                <h2 class="card-title">Education</h2>
             </div>
 
             <div class="area-of-interest">
-                <h2 class="card-title">About</h2>
-                <p class="card-summary"> am an enthusiastic computer engineering student with a passion for creating impactful software solutions. With a strong academic record and hands-on experience, I have developed proficiency in multiple programming languages such as C/C++, Java, Python, Ruby, TypeScript, and JavaScript, and I am always eager to learn more. I am well-versed in software engineering, agile methodologies, and test-driven development, and I thrive in fast-paced, collaborative environments. As a former intern at Amazon AWS, I contributed to the development of the SageMaker GroundTruth data labeling service, where I demonstrated my exceptional problem-solving and attention-to-detail skills. In my free time, I actively participate in the Texas A&M Computing Society and hackathons, where I continuously hone my skills and stay up-to-date on the latest industry trends. I am a scholarship recipient and possess excellent communication, teamwork, and adaptability skills. I am excited to bring my creativity and passion to a full-time software development engineer position where I can make valuable contributions and grow both personally and professionally</p>
+                <p class="card-grey-subtitle"><strong>Texas A&M University</strong></p>
+                <p class="card-subtitle">College Station, TX</p>
+                <p class="card-grey-subtitle">B.S. in Computer Engineering with Minor in Mathematics</p>
+                <p class="card-grey-subtitle">August 2019 - May 2023 | Cumulative GPA: 3.42 (4.0 Scale)</p>
+                <p class="card-summary">
+                    <i><u>Relevant Coursework:</u> Software Engineering; Data Structures and Algorithms; Web Design; Programming Studio;
+                        Graphic Design; Computer Graphics; Visualization Techniques; Wireless and Mobile Systems; Cryptography.</i> 
+                </p>
+                <p class="card-summary">
+                    <i><u>Scholarships Received:</u> Hispanic Scholarship Fund; Century Scholar; Dallas A&M Club.</i> 
+                </p>
+                <p class="card-summary">
+                    <i><u>Additional Involvement:</u> TAMU Hack; Texas A&M Computing Society; Aggie Coding Club.</i> 
+                </p>
+
+                <div class="card" id="download">
+                    <form method="get" action="resources/files/BS-NathanielTrujillo-Transcript.pdf" target="_blank">
+                        <button class="btn"><i class="fa fa-download"></i> Transcript</button>
+                    </form>
+                </div>
             </div>
+
+            <div class="area-of-interest">
+                <p class="card-grey-subtitle"><strong>Mountain View College</strong></p>
+                <p class="card-subtitle">Dallas, TX</p>
+                <p class="card-grey-subtitle">Associate of Science in Liberal Science</p>
+                <p class="card-grey-subtitle">June 2017 - May 2019 | Cumulative GPA: 3.78 (4.0 Scale)</p>
+                <p class="card-summary">
+                As a high school student, I was committed to pursuing higher education and began taking college courses at Mountain View College in Dallas, Texas. Through hard work and dedication, I was able to earn my Associate of Science degree while still attending high school. This experience taught me valuable time management skills, and instilled in me the importance of education and self-discipline. It also provided me with a strong foundation in STEM subjects, which I have since built upon through my studies in computer science and engineering at Texas A&M University.
+                </p>
+                <p class="card-summary"><i><u>Relevant Coursework:</u> Programming Fundamentals I (Python); Business Computer Applications.</i></p>
+                <div class="card" id="download">
+                    <form method="get" action="resources/files/AA-NathanielTrujillo-Transcript.pdf" target="_blank">
+                        <button class="btn"><i class="fa fa-download"></i> Transcript</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="area-of-interest">
+                <p class="card-grey-subtitle"><strong>Duncanville High School</strong></p>
+                <p class="card-subtitle">Duncanville, TX</p>
+                <p class="card-grey-subtitle">High School Diploma</p>
+                <p class="card-grey-subtitle">August 2015 - May 2019 | Cumulative GPA: 4.0 (4.0 Scale)</p>
+                <p class="card-summary">
+                    <i><u>Additional Involvement:</u> Marching Band Drum Major and Historian; NHS Vice President; NTHS member; SkillsUSA Digital Media Vice President; Eagle Scout; and Journalism Member.</i>
+                </p>
+                <p class="card-summary">
+                    <i><u>Awards:</u> TMEA All State Musician (Alto Saxophone).</i>
+                </p>
+            </div>
+
+            <div class="section-banner">
+                <h2 class="card-title">Work Experience</h2>
+            </div>
+
+            <div class="area-of-interest">
+                <p class="card-subtitle">Amazon AWS SageMaker (Software Development Engineer Intern) </p>
+                <p class="card-summary">
+                    In my first project I onboarded OpenID Connect (OIDC) configurations to the CloudFormation (CFn) Workteam resource. CFn
+                    abstracts away the complexity of specific resource APIs, and OIDC configurations allows customers to manage and authenticate
+                    group workers directly through the external identity provider of their choice without managing password files. The CFn Workteam
+                    resource originally only supported Amazon Cognito Identity Providers and the key deliverable of this project was to add support
+                    for identity providers that adhere to the OpenID Connect standard to give customers more flexibility for managing their workers.
+                    In my second project I added support for custom scope and static parameters to OIDC configurations within the Workforce
+                    resource. Custom scope in OIDC adds an extra layer to the identity provider to differentiate the authentication results between
+                    various clients effectively increasing flexibility in the authentication process. The additional static query parameters contribute to
+                    the authentication/token endpoints by returning a set of user attributes based on the query parameter defined. Additionally,
+                    found a bug in the original implementation of the static parameters that inadvertently capitalized/lowercased parameter keys
+                    when moving the object between APIs. Squashed bug by internally changing datatype from a map to a list of objects.
+                </p>
+            </div>
+
+            <!-- <div class="area-of-interest">
+                <h2 class="card-title">About</h2>
+                <p class="card-summary">Currently seeking a full-time employment oportunity in full- stack web development.</p>
+            </div> -->
 
             <div class="card">
                 <h2>Additional Involvements</h2>
@@ -66,7 +135,10 @@
 
             <div class="card" id="skills">
                 <h2>Technical Skills</h2>
-                <p class="card-summary">C++, Verilog, Java, Python, Ruby/Ruby on Rails, JavaScript, Github, Docker, Adobe Suite, Authentication, Agile, Continuous Integration/Delivery, Test Driven Development, Code Review, Communication Planning, Teamwork, Problem-Solving, Attention to Detail, Adaptability, and Creativity.</p>
+                <p class="card-summary">C++; C; Java; Python; Ruby; JavaScript; TypeScript; NodeJS; ReactJS; HTML5/CSS; RESTful API; MVC; Ruby on
+                    Rails; Flask; Git/GitHub; PostgreSQL; Docker; XML Schema; Agile Methodology; Continuous
+                    Integration/Continuous Delivery (CI/CD); Code Review; Effective Communication; Collaborative Teamwork;
+                    Problem-Solving; Meticulous Attention to Detail; Adaptive Thinking; Creative Solution Development.</p>
             </div>
 
             <div class="card">
